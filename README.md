@@ -12,6 +12,12 @@
 
 #### Example usage:
 
+#### (Returns current UTC date-time and UNIX timestamp)
+- https://timestamp-microservice-sd.glitch.me/api/timestamp/
+
+
+
+#### (below links return for specified date-time in both formats)
 - https://timestamp-microservice-sd.glitch.me/api/timestamp/2020-05-29
 - https://timestamp-microservice-sd.glitch.me/api/timestamp/1590769211006
 
