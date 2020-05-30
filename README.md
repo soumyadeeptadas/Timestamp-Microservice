@@ -1,7 +1,7 @@
 # API Project: Timestamp Microservice
 
 ## APP Link
-### - https://timestamp-microservice-sd.glitch.me/
+### https://timestamp-microservice-sd.glitch.me/
 
 ### Overview:
 
