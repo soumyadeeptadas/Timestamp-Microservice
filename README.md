@@ -3,6 +3,8 @@
 ## APP Link
 ### https://timestamp-microservice-sd.glitch.me/
 
+refresh if theres loading or server error
+
 ### Overview:
 
 1. This microservice produces the UTC as well as unix date when the endpoint is satisfied.
