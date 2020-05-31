@@ -29,3 +29,12 @@ refresh if theres loading or server error
 #### Example output:
 
 - `{"unix":1590769211006,"utc":"Fri, 29 May 2020 16:20:11 GMT"}`
+
+
+
+# To run locally:
+## prerequisites NodeJs
+- cd into the project folder
+- in powershell or similar terminal, run 'npm install --save'
+- then run 'node server.js'
+- app starts at specified port number
