@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Timestamp Microservice: API</title>
+   <!-- <link
+      rel="shortcut icon"
+      href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico"
+      type="image/x-icon"
+    />-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Timestamp Microservice: API</h2>
+      <h3>Overview:</h3>
+      <ol class="user-stories">
+        <li>
+          This microservice produces the UTC as well as unix date when the endpoint is satisfied.
+        </li>
+        <li>
+          The API endpoint is<br>
+          <code>https://timestamp-microservice-sd.glitch.me/api/timestamp/:date_string?</code>
+        </li>
+        <li>
+          Returns current UTC and unix date if no <code>date_string</code> is passed
+        </li>
+        <li>
+          If the date string is <strong>valid</strong> the api returns a JSON
+          having the structure<br />
+          e.g.
+          <code
+            >{"unix": 1479663089000 ,"utc": "Sun, 20 Nov 2016 17:31:29
+            GMT"}</code
+          >
+        </li>
+        <li>
+          If the date string is <strong>invalid</strong> the api returns a JSON
+          having the structure <br />
+          <code>{"error" : "Invalid Date" }</code>.
+        </li>
+      </ol>
+
+      <h3>Example Usage: </h3>
+      <p>If running locally: <code>[baseurl]/api/timestamp/</code></p>
+      <ul>
+        <li>(Returns current UTC and unix date-time)<br>
+          <a href="api/timestamp/"
+            >https://timestamp-microservice-sd.glitch.me/api/timestamp/</a
+          >
+        </li><br>
+        <li>(Below links return for specified date-time in both formats)<br>
+          <a href="api/timestamp/2020-05-29"
+            >https://timestamp-microservice-sd.glitch.me/api/timestamp/2020-05-29</a
+          >
+        </li>
+        <li>
+          <a href="api/timestamp/1590769211006"
+            >https://timestamp-microservice-sd.glitch.me/api/timestamp/1590769211006</a
+          >
+        </li>
+      </ul>
+
+      <h3>Example Output:</h3>
+      <p>
+        <code
+          >{"unix":1590769211006,"utc":"Fri, 29 May 2020 16:20:11 GMT"}</code
+        >
+      </p>
+    </div>
+    <div class="footer">
+      <p>By <a href="https://glitch.com/@soumyadeeptadas"><strong>Soumyadeepta Das</strong></a></p>
+    </div>
+  </body>
+</html>
